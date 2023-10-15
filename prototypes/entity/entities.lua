@@ -1,8 +1,10 @@
+local steel_pipe_texture_location = mods["Krastorio2"] and "__Krastorio2Assets__/entities/steel-pipe/" or "__k2-steel-pipes__/graphics/steel-pipe/"
+
 --  Functions
 function define_pipe_sprite(filename)
   sprite=
   {
-    filename="__Krastorio2Assets__/entities/steel-pipe/"..filename,
+    filename=steel_pipe_texture_location .. filename,
     priority="extra-high",
     width=128,
     height=128,
@@ -18,6 +20,7 @@ end
 local steel_pipe_straight=util.table.deepcopy(data.raw["storage-tank"]["pipe-elbow"])
 steel_pipe_straight.name="steel-pipe-straight"
 steel_pipe_straight.icon="__k2-flow-control-bridge__/graphics/icon/steel-pipe-straight.png"
+steel_pipe_straight.max_health=200
 steel_pipe_straight.selection_box={{-0.35,-0.5},{0.35,0.5}}
 steel_pipe_straight.minable={mining_time=0.1,result="kr-steel-pipe"}
 steel_pipe_straight.placeable_by={item="kr-steel-pipe",count=1}
@@ -39,6 +42,7 @@ steel_pipe_straight.pictures.picture=
 local steel_pipe_t_junction=util.table.deepcopy(data.raw["storage-tank"]["pipe-elbow"])
 steel_pipe_t_junction.name="steel-pipe-t-junction"
 steel_pipe_t_junction.icon="__k2-flow-control-bridge__/graphics/icon/steel-pipe-t-junction.png"
+steel_pipe_t_junction.max_health=200
 steel_pipe_t_junction.selection_box={{-0.5,-0.35},{0.5,0.5}}
 steel_pipe_t_junction.minable={mining_time=0.1,result="kr-steel-pipe"}
 steel_pipe_t_junction.placeable_by={item="kr-steel-pipe",count=1}
@@ -61,6 +65,7 @@ steel_pipe_t_junction.pictures.picture=
 local steel_pipe_elbow=util.table.deepcopy(data.raw["storage-tank"]["pipe-elbow"])
 steel_pipe_elbow.name="steel-pipe-elbow"
 steel_pipe_elbow.icon="__k2-flow-control-bridge__/graphics/icon/steel-pipe-elbow.png"
+steel_pipe_elbow.max_health=200
 steel_pipe_elbow.selection_box={{-0.5,-0.35},{0.5,0.5}}
 steel_pipe_elbow.minable={mining_time=0.1,result="kr-steel-pipe"}
 steel_pipe_elbow.placeable_by={item="kr-steel-pipe",count=1}

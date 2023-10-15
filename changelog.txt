@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 2023-10-15
+  Changes:
+    - Fixed junction health to match steel pipe health
+    - Added support for the standalone steel pipes mod
+---------------------------------------------------------------------------------------------------
 Version: 1.0.2
 Date: 2023-10-01
   Changes:

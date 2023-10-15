@@ -1,3 +1,7 @@
+if not mods["Krastorio2"] and not mods["k2-steel-pipes"] then
+    error("Krastorio2 or Steel pipes must be installed. Disable this mod or install a compatible mod.")
+end
+
 require("prototypes.entity.entities")
 require("prototypes.item")
 require("prototypes.recipe")

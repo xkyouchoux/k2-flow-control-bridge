@@ -1,9 +1,9 @@
 {
 	"name": "k2-flow-control-bridge",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"title": "Krastorio2-Flow Control Bridge",
 	"author": "xkyouchoux",
 	"description": "Adds Steel Pipe Variants Of Flow Control's Pipe Junctions",
 	"factorio_version": "1.1",
-	"dependencies": ["base","Krastorio2","Flow Control","? se-flow-control-bridge"]
+	"dependencies": ["Flow Control", "? Krastorio2","? k2-steel-pipes"]
 }
